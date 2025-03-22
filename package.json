@@ -1,18 +1,22 @@
 {
-  "name": "component-library",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@jordanburger22/component-library", 
+  "version": "1.0.0",
   "type": "module",
+  "main": "dist/component-library.cjs.js",
+  "module": "dist/component-library.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "prop-types": "^15.8.1",
+  "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
